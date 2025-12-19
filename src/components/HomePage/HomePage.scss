@@ -1,62 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 .hero {
- font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  height: 100vh ;
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
   background: linear-gradient(180deg, #0c0c1d, #111132);
+  display: flex;
+  align-items: center;
+  position: relative;
   overflow: hidden;
-
-  .imgContainer {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    height: 100%;
-    display: flex;
-    img {
-      width:100%;
-      height:90%;
-    }
-  }
-  
 
   .wrapper {
     max-width: 1366px;
-    height: 100vh;
-    margin-left: 20px;
+    width: 100%;
+    padding-left: 2rem;
 
     .textContainer {
       color: white;
       width: 60%;
-      height: 90%;
       display: flex;
-      justify-content: center;
       flex-direction: column;
-      gap: 30px;
+      gap: 2rem;
 
       .details {
-        h2 {
-         font-size: 30px;
-         margin-top:10px;
-         color: rebeccapurple;
-         letter-spacing: 10px;
-      }
-    
-    h1 {
-      font-size: 70px;
+        h1 {
+          font-size: clamp(2.2rem, 6vw, 4.3rem);
+        }
 
-    }
+        h2 {
+          font-size: clamp(1.2rem, 3vw, 2rem);
+          margin-top: 0.5rem;
+          color: rebeccapurple;
+          letter-spacing: 6px;
+        }
       }
+
       .detail {
-        font-size: 2rem;
         display: flex;
-        gap:1rem;
+        align-items: center;
+        gap: 1rem;
+        font-size: clamp(1rem, 2.8vw, 1.4rem);
         text-transform: lowercase;
-      
       }
-    
-    
+    }
   }
+
+  .imgContainer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      max-height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    overflow: visible;
+    padding-bottom: 3rem;
+
+    .wrapper {
+      padding: 0 1.5rem;
+
+      .textContainer {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    .imgContainer {
+      position: relative;      // 🔥 KEY FIX
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+
+      img {
+        width: 65%;             // 👈 visible & centered
+        max-width: 260px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
   }
 }

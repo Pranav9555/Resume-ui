@@ -9,9 +9,25 @@ html {
   background: linear-gradient(180deg, #0c0c1d, #111132);
 
 }
+body {
+   overflow-x: hidden;
+}
 
 section {
   scroll-snap-align: center ;
   height: 100vh;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+
+  section {
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  #personal-detail {
+    flex-direction: column; // Sidebar on top
+    gap: 3rem;
+  }
+
 }
