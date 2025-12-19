@@ -8,7 +8,7 @@ function HomePage() {
   const isMobile = window.innerWidth <= 768;
  const textvariants = {
   initial: {
-    x: isMobile ? 0 : -200,   
+    x: isMobile ? 0 : -100,   
     opacity: isMobile ? 1 : 0 
   },
   animate: {
@@ -16,7 +16,7 @@ function HomePage() {
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1,
+      duration: 1.5,
       staggerChildren: 0.2
     }
   }
