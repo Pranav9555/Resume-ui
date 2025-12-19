@@ -17,8 +17,8 @@
     {"text" : "React",
      "path" : "/react.png"
      }, 
-    {"text" : "Git",
-     "path" : "/git.png"
+    {"text" : "Github",
+     "path" : "/github.png"
      }
     ],
   "tools": ["Git", "VS Code"],

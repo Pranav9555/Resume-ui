@@ -5,21 +5,23 @@ import data from "../../data/resume.json";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 function HomePage() {
-  const textvariants = {
-    initial : {
-      x : -500,
-      opacity : 0
-    },
-    animate : {
-      x : 0,
-      opacity : 1,
-      transition : {
-        type: " spring",
-        duration : 1,
-        staggerChildren : 0.3
-      }
-    },
+  const isMobile = window.innerWidth <= 768;
+ const textvariants = {
+  initial: {
+    x: isMobile ? 0 : -200,   
+    opacity: isMobile ? 1 : 0 
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1,
+      staggerChildren: 0.2
+    }
   }
+};
+
   let ref=useRef();
   let inView = useInView(ref);
 
@@ -27,7 +29,7 @@ function HomePage() {
   return (
     <div className="hero">
       <div className="wrapper">
-        <motion.div className="textContainer" variants={textvariants} intital="intial" animate={inView ? "animate" : "initial"}  ref={ref} >
+        <motion.div className="textContainer" variants={textvariants} intital="initial" animate={inView ? "animate" : "initial"}  ref={ref} >
 
           <motion.div className="details" variants={textvariants}>
            <h1>Name : {data.name}</h1>

@@ -78,7 +78,7 @@
     }
 
     .imgContainer {
-      position: relative;      // 🔥 KEY FIX
+      position: relative;      
       width: 100%;
       height: auto;
       display: flex;
@@ -86,8 +86,7 @@
       margin-top: 2rem;
 
       img {
-        width: 65%;             // 👈 visible & centered
-        max-width: 260px;
+        width: min(80vw, 380px);
         height: auto;
         object-fit: contain;
       }

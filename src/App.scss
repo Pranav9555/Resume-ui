@@ -15,8 +15,7 @@ body {
 
 section {
   scroll-snap-align: center ;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 @media (max-width: 768px) {
 
@@ -26,8 +25,151 @@ section {
   }
 
   #personal-detail {
-    flex-direction: column; // Sidebar on top
+    flex-direction: column; 
     gap: 3rem;
   }
 
+}
+
+
+//for tablet
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  
+  section {
+    min-height: auto;
+    padding: 4rem 3rem;
+  }
+
+  /* PERSONAL DETAIL */
+  #personal-detail {
+    gap: 3rem;
+  }
+
+  .hero {
+    .wrapper {
+      padding-left: 2rem;
+
+      .textContainer {
+        width: 65%;
+
+        .details {
+          h1 {
+            font-size: 3.2rem;
+          }
+
+          h2 {
+            font-size: 1.6rem;
+            letter-spacing: 6px;
+          }
+        }
+
+        .detail {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .imgContainer {
+      height: 80%;
+
+      img {
+        max-width: 380px;
+      }
+    }
+  }
+
+  /* PORTFOLIO LINKS  */
+  .container {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .social {
+      gap: 2.5rem;
+
+      .social-link {
+        img {
+          width: 58px;
+          height: 58px;
+        }
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  /*  SKILLS  */
+  .skill {
+    max-width: 900px;
+    gap: 2.5rem;
+
+    .skillContainer {
+      padding: 0.8rem 1.4rem;
+
+      span {
+        font-size: 2rem;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+
+  /* EDUCATION*/
+  .education {
+    padding: 4rem 2rem;
+  }
+
+  .education-grid {
+    gap: 2.2rem;
+  }
+
+  /* PROJECTS  */
+  .portfolio {
+
+    .progress {
+      padding-top: 3rem;
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    .container {
+      padding: 3rem 2.5rem;
+
+      .wrapper {
+        gap: 3rem;
+
+        .imageContainer img {
+          max-width: 360px;
+        }
+
+        .textContainer {
+          h2 {
+            font-size: 3rem;
+          }
+
+          h3 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 1.05rem;
+          }
+
+          button {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
 }
