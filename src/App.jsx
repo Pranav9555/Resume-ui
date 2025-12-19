@@ -1,6 +1,10 @@
 import "./App.scss";
+import Education from "./components/Education/Education";
 import HomePage from "./components/HomePage/HomePage";
+import PortfolioLinks from "./components/PortfolioLinks/PortfolioLinks";
+import Projects from "./components/Projects/Project";
 import SideBar from "./components/sideBar/SideBar";
+import Skills from "./components/skills/Skills";
 function App() {
   return ( 
     <>
@@ -8,10 +12,16 @@ function App() {
       <SideBar/>
       <HomePage/>
     </section>
-    <section id="portfolio links"></section>
-    <section id="Education"></section>
-    <section id="Projects"></section>
-    <section id="Skills"></section>
+    <section id="portfolio links">
+      <PortfolioLinks/>
+    </section>
+    <section id="Education">
+      <Education/>
+    </section>
+    <Projects/>
+    <section id="Skills">
+      <Skills/>
+    </section>
     </>
    );
 }

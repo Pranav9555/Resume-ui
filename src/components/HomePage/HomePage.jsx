@@ -19,14 +19,6 @@ function HomePage() {
         staggerChildren : 0.3
       }
     },
-    Scrollbutton : {
-      y : 10,
-      opacity : 0,
-      transition : {
-        duration : 2,
-        repeat : Infinity,
-      }
-    }
   }
   let ref=useRef();
   let inView = useInView(ref);
@@ -37,22 +29,22 @@ function HomePage() {
       <div className="wrapper">
         <motion.div className="textContainer" variants={textvariants} intital="intial" animate={inView ? "animate" : "initial"}  ref={ref} >
 
-          <div className="details">
+          <motion.div className="details" variants={textvariants}>
            <h1>Name : {data.name}</h1>
            <h2>Role : {data.role}</h2>
-          </div>
-          <div className="detail">
+          </motion.div>
+          <motion.div className="detail" variants={textvariants}>
             <span><MapPin size={20}/></span>
             <p>{data.location}</p>
-          </div>
-          <div className="detail">
+          </motion.div>
+          <motion.div className="detail" variants={textvariants}>
             <span><Mail size={20}/></span>
             <p>{data.email}</p>
-          </div>
-          <div className="detail">
+          </motion.div>
+          <motion.div className="detail" variants={textvariants}>
             <span><Phone size={20}/></span>
             <p>{data.phone}</p>
-          </div>
+          </motion.div>
          </motion.div>
 
       </div>

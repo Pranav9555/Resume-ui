@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.education {
+   font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.education-card {
+  background: linear-gradient(145deg, #1a1a1a, #222);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.degree {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.college {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1.2rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.education-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 224, 255, 0.2);
+}

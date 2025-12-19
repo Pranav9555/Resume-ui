@@ -6,9 +6,12 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+
 }
 
 section {
   scroll-snap-align: center ;
   height: 100vh;
+  overflow: hidden;
 }
