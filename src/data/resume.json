@@ -6,6 +6,12 @@
   "phone": "+91 9156330583",
   "skills": ["HTML", "CSS", "JavaScript", "React", "SCSS","Redux"],
   "tools": ["Git", "VS Code"],
+  "education": [
+    {"degree": "MCA", "college": "GH Raisoni College", "year": "2026", "cgpa": "8.72"},
+    {"degree": "BCS", "college": "SBES College", "year": "2024", "percentage": "70.77%"},
+    {"degree": "HSC", "college": "Bhimashankar padalkar College", "year": "2021", "percentage": "84.33%"},
+    {"degree": "SSC", "college": "Little angel's school", "year": "2019", "percentage": "68.60%"}
+  ],
   "projects": [
     {
       "title": "Text to Image Generator",
@@ -23,5 +29,6 @@
       "tech": ["Html","Css","React"]
     }
     
-  ]
+  ],
+  "activities": ["Cricket", "Traveling"]
 }
