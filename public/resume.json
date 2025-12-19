@@ -1,0 +1,27 @@
+{
+  "name": "Pranav Phalke",
+  "role": "Frontend Developer",
+  "location": "Pune, maharashtra",
+  "email": "pranavphalke97975@gmail.com",
+  "phone": "+91 9156330583",
+  "skills": ["HTML", "CSS", "JavaScript", "React", "SCSS","Redux"],
+  "tools": ["Git", "VS Code"],
+  "projects": [
+    {
+      "title": "Text to Image Generator",
+      "description": "Built a full-stack web application that generates Al-based images from text prompts using the ClipDrop API.Developed image generation, download functionality, and persistent user data management with MongoDB",
+      "tech": ["Html","Css","React", "Express", "MongoDB","JWT"]
+    },
+    {
+      "title": "Personal Portfolio Website",
+      "description": "Designed and developed a responsive animated portfolio website to showcase projects and technical skills, implementing smooth, modern .animations using Framer Motion.Built a scalable, responsive layout with Sass for maintainable CSS architecture and integrated a functional contact form with an email notification system for direct user communication",
+      "tech": ["Html","Css","React", "framer motion", "Saas"]
+    },
+    {
+      "title": "Social media app",
+      "description": "Designed and developed a responsive animated portfolio website to showcase projects and technical skills, implementing smooth, modern .animations using Framer Motion.Built a scalable, responsive layout with Sass for maintainable CSS architecture and integrated a functional contact form with an email notification system for direct user communication",
+      "tech": ["Html","Css","React"]
+    }
+    
+  ]
+}
