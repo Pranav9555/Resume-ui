@@ -52,7 +52,7 @@ function HomePage() {
       </div>
 
       <div className="imgContainer">
-        <img src="/profile4.png" alt="profile-image" />
+        <img src="profile4.png" alt="profile-image" />
       </div>
     </div>
   );

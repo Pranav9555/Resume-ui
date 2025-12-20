@@ -9,7 +9,6 @@ function Links() {
     },
     closed : {
       transition : {
-        staggerChildren : 0.05,
         staggerChildren: -1
       }
     }
