@@ -19,10 +19,10 @@ https://pranav9555.github.io/Resume-ui/
 
 ## Screenshots
 
-### Desktop View
-![Homepage](screenshots/portfolio-intro.png)
 
-### Mobile View
-![Skills](screenshots/portfolio-skill.png)
+![Homepage](src/screenshots/portfolio-intro.png)
+
+
+![Skills](src/screenshots/portfolio-skill.png)
 
 
