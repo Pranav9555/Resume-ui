@@ -9,7 +9,23 @@ It showcases my skills, projects, education, and contact links with a modern UI.
 
 
 # How to Run /view the project
+git clone https://github.com/Pranav9555/Resume-ui.git
+
+cd Resume-ui
+
 npm install
+
 npm run dev
+
+# Hosted Link
+https://pranav9555.github.io/Resume-ui/
+
+## Screenshots
+
+
+![Homepage](src/screenshots/portfolio-intro.png)
+
+
+![Skills](src/screenshots/portfolio-skill.png)
 
 
