@@ -26,9 +26,9 @@ function Skills() {
 
       {
         skills.map((skill)=> (
-        <motion.div className="skillContainer" variants={textVariants} whileHover={{scale : 1.1}} key={skill.id}>
+        <motion.div className="skillContainer" variants={textVariants} whileHover={{scale : 1.1}} key={skill.text}>
           <span>{skill.text}</span>
-          <img src={skill.path}  />
+          <img src={`${import.meta.env.BASE_URL}${skill.path}`}  />
         </motion.div>
 
         ))

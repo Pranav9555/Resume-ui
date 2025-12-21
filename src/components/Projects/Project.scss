@@ -1,3 +1,5 @@
+@use "../../App.scss" as app;
+
 .portfolio {
   position: relative;
 
@@ -12,7 +14,12 @@
 
     h1 {
       letter-spacing: 4px;
-      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-size: 1.8rem;
+
+      @include app.mobile {
+        margin-top: 6rem;
+
+      }
     }
   }
 
@@ -20,6 +27,11 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+
+    @include app.mobile {
+      min-height: auto;
+      padding: 3rem 0;
+    }
   }
 
   .container {
@@ -34,6 +46,12 @@
       display: flex;
       align-items: center;
       gap: 4rem;
+
+      @include app.mobile {
+         flex-direction: column;     
+        gap: 2.5rem;
+        text-align: center;
+      }
 
       .imageContainer {
         flex: 1;
@@ -85,30 +103,4 @@
 }
  
 
-@media (max-width: 768px) {
-  .portfolio {
 
-    section {
-      min-height: auto;
-      padding: 3rem 0;
-    }
-
-    .container {
-      padding: 2rem 1rem;
-
-      .wrapper {
-        flex-direction: column;     // 🔥 stack layout
-        gap: 2.5rem;
-        text-align: center;
-
-        .textContainer {
-          align-items: center;
-
-          button {
-            width: 160px;
-          }
-        }
-      }
-    }
-  }
-}

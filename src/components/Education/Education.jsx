@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const Education = () => {
   return (
     <section className="education">
-      <h2 className="section-title">Education</h2>
+      <h2 className="title">Education</h2>
 
-      <div className="education-grid">
+      <div className="education-container">
         {education.map((edu, index) => (
           <motion.div
             className="education-card"
@@ -15,12 +15,13 @@ const Education = () => {
             whileHover={{ y: -8 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <div className="degree">{edu.degree}</div>
+            <h2 className="degree">{edu.degree}</h2>
 
-            <div className="college">{edu.college}</div>
+            <h4 className="college">{edu.college}</h4>
 
-            <div className="meta">
-              <span>{edu.year}</span>
+            <div className="detail">
+              <p>{edu.year}</p>
+              
               {edu.cgpa && <span>CGPA: {edu.cgpa}</span>}
               {edu.percentage && <span>{edu.percentage}</span>}
             </div>

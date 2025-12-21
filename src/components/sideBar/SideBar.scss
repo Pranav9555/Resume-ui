@@ -1,3 +1,4 @@
+@use "../../App.scss" as app;
 
 .sidebar {
   display: flex;
@@ -16,6 +17,10 @@
     background-color: white;
     z-index: 999;
 
+     @include app.mobile {
+      width:200px;
+    }
+
 
 
     .links {
@@ -33,6 +38,10 @@
         font-weight: bold;
         color: #000;
         font-size: 40px;
+
+                @include app.mobile {
+          font-size: 20px;
+        }
       }
     }
   }

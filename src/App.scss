@@ -17,19 +17,31 @@ section {
   scroll-snap-align: center ;
   min-height: 100vh;
 }
-@media (max-width: 768px) {
 
-  section {
-    min-height: auto;
-    padding: 3rem 1.5rem;
+// // @mixin mobile {
+// //   @media (max-w)
+// // }
+// @media (max-width: 768px) {
+
+//   section {
+//     min-height: auto;
+//     padding: 3rem 1.5rem;
+//   }
+
+//   #personal-detail {
+//     flex-direction: column; 
+//     gap: 3rem;
+//   }
+
+// }
+
+
+@mixin mobile {
+  @media (max-width : 738px){
+    @content;
   }
-
-  #personal-detail {
-    flex-direction: column; 
-    gap: 3rem;
-  }
-
 }
+
 
 
 //for tablet

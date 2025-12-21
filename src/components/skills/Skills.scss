@@ -1,3 +1,5 @@
+@use "../../App.scss" as app;
+
 .container {
   min-height: 100vh;      
   width: 100%;
@@ -22,6 +24,10 @@
     gap: 2.5rem;
     justify-content: center;
 
+    @include app.mobile {
+       gap: 1.8rem;
+    }
+
     .skillContainer {
       background-color: white;
       color: black;
@@ -35,9 +41,6 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-      &:hover {
-        box-shadow: 0 10px 30px rgba(226, 239, 222, 0.6);
-      }
 
       span {
         font-family: "Zeyada", cursive;
@@ -54,12 +57,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .container {
-    padding: 2.5rem 1rem;
-
-    .skill {
-      gap: 1.8rem;
-    }
-  }
-}

@@ -8,7 +8,7 @@ const Single = ({ item }) => {
     <div className="container">
       <div className="wrapper">
         <div className="imageContainer" >
-          <img src={item.img} alt="" />
+          <img src={`${import.meta.env.BASE_URL}${item.img}`} alt="" />
         </div>
         <motion.div className="textContainer" >
           <h2>{item.title}</h2>

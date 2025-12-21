@@ -1,3 +1,4 @@
+@use "../../App.scss" as app;
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 .hero {
@@ -7,12 +8,20 @@
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+
+  @include app.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .wrapper {
     max-width: 1366px;
     width: 100%;
     padding-left: 2rem;
+    @include app.mobile {
+      margin-top: 80px;
+    }
 
     .textContainer {
       color: white;
@@ -57,39 +66,16 @@
       width: auto;
       object-fit: contain;
     }
-  }
-}
+     @include app.mobile {
 
-
-@media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-    overflow: visible;
-    padding-bottom: 3rem;
-
-    .wrapper {
-      padding: 0 1.5rem;
-
-      .textContainer {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-    }
-
-    .imgContainer {
-      position: relative;      
-      width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      margin-top: 2rem;
-
-      img {
-        width: min(80vw, 380px);
-        height: auto;
-        object-fit: contain;
-      }
+      height: 40%;
+      width:70%;
+      top:unset;
+      bottom: 0;
+      object-fit: contain;
+      
     }
   }
 }
+
+
